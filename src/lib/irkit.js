@@ -9,7 +9,6 @@ class IRKit {
     var browser = mdns.createBrowser();
 
     browser.on('ready', function () {
-      console.log('でぃすかば')
       browser.discover();
     });
 
@@ -53,8 +52,6 @@ class IRKit {
       method: 'POST'
     };
     var req = http.request(options, (res) => {
-      console.log('STATUS: ' + res.statusCode);
-      console.log('HEADERS: ' + JSON.stringify(res.headers));
       res.setEncoding('utf8');
       res.on('data', function (chunk) {
         console.log('BODY: ' + chunk);

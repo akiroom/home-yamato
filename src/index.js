@@ -22,6 +22,4 @@ app.on('ready', () => {
   //mainWindow.on('closed', function() {
   //  mainWindow = null;
   //});
-
-  
 });
